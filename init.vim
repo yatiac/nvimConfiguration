@@ -14,16 +14,22 @@ call plug#end()
 
 colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
+nnoremap <esc><esc> :silent! nohls<cr>
 
 filetype plugin indent on
 syntax on
-set colorcolumn=80
+" set colorcolumn=80
 set background=dark
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-set nowrap
+" set nowrap
 set smartcase
 set hlsearch
 set noerrorbells
-set tabstop=4 softtabstop=4
+set tabstop=2 softtabstop=2
 set expandtab
 set smartindent
+set mouse=a
+set cursorline
+set cursorcolumn
+set wildmode=longest,list,full
+set splitbelow splitright
